@@ -1,0 +1,187 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>
+      Travel Diaries
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <script type="text/javascript">
+      function setNewimg() {
+        document.getElementById("img1").src = "images/tra2.png";
+      }
+
+      function setOldimg() {
+        document.getElementById("img1").src = "images/1.png";
+      }
+
+      
+
+
+      
+    </script>
+  </head>
+
+  <body>
+    <header id="header">
+      <img id="logo" src="images/logo.jpg"/>
+      <a href="#" class="logo">Travel Diaries</a>
+      <ul>
+        <li><a href="#home" class="active" ><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+        <li><a href="#about"><i class="fa fa-id-card-o" aria-hidden="true"></i>Travel Story</a></li>
+        <li><a href="#contect"><i class="fa fa-camera" aria-hidden="true"></i>Photos</a></li>
+        <li><a href="#profile"><i class="fa fa-facebook-official" aria-hidden="true"></i>Profile</a></li>
+        <li><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i>Log In</a></li>
+      </ul>
+      <div class="toggle" onclick="toggle()"></div>
+    </header>
+
+    <section id="home">
+      <div class="maindiv">
+        <h2>LET'S TAKE A SNAP SHOT</h2>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="aboutt">
+        <h2 id="text1" class="mytext" onmousemove="changeStyling()">
+          Share Your Story
+        </h2>
+
+        <h3 id="text2" class="mytext">
+          Travel Makes One Modest.<br />
+          You See What a Tiny Place<br />
+          You Occupy in the World.
+        </h3>
+
+        <img src="images/ch1.jpeg" id="child" />
+        <h5>OCTOBER 10,2019 | UDAIPUR</h5>
+        <h4>Similing is an International Language</h4>
+        <p align:centre;>
+          “ Live with no excuses and travel with no regrets. ” - Henry Miller
+        </p>
+      </div>
+    </section>
+
+    <section id="contect">
+      <div class="galary">
+        <h2>Gallery</h2>
+        <img id="r" src="images/p2.jpeg" class="image" />
+        <img id="r1" src="images/p3.jpeg" class="image" />
+        <img id="r2" src="images/p5.jpeg" class="image" />
+        <img id="r3" src="images/p6.jpeg" class="image" />
+      </div>
+    </section>
+
+    <section id="profile">
+      <div class="profilee">
+        <h2>Profile</h2>
+        <img id="s1" src="images/snap.png"  href="https://www.snapchat.com"/>
+        <img id="s2" src="images/insta.png" href="https://www.instagram.com" />
+        <img id="s3" src="images/facebook.png" href="https://www.facebook.com" />
+        <img id="s4" src="images/twitter.png" href="https://www.twitter.com" />
+        <img id="s5" src="images/linkedin.png" href="https://www.linkedin.com" />
+        <img id="s6" src="images/gp.png" href="https://www.googlephotos.com" />
+        
+
+      </div>
+    </section>
+
+    <section id="callus">
+      <div class="item">
+        <h2 id="callus1">Browse Categories</h2>
+        <h3 id="i1" class="items">Life Style</h3>
+        <h3 id="i2" class="items">Business & Corporate</h3>
+        <h3 id="i3" class="items">Concept & Ideas</h3>
+        <h3 id="i4" class="items">Beauty & Fashion</h3>
+        <h3 id="i5" class="items">Health & Fitness</h3>
+        <h3 id="i6" class="items">Sports & Leisure</h3>
+        <h3 id="i7" class="items">Technology</h3>
+
+        <button id="btn3" type="button" name="Join Us" placeholder="Join Us" href="login.html">JOIN US</button>
+        </button>
+
+        <p></p>
+      </div>
+      <img id="tra" src="images/td3.png" />
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+      function toggle() {
+        var header = document.getElementById("header");
+        header.classList.toggle("active");
+      }
+    </script>
+
+    <div class="footer">
+      <div class="inner-footer">
+        <div class="footer-items">
+          <h1>travel Diaries</h1>
+          <img id="logof" src="images/logo.jpg" />
+        </div>
+
+        <div class="footer-items">
+          <h2>Quick links</h2>
+          <div class="border"></div>
+          <ul>
+            <a href="#home"><li>Home</li></a>
+            <a href="#about"><li>Travel Story</li></a>
+            <a href="#profile"><li>profile</li></a>
+            <a href="#login.html"><li>Login</li></a>
+            <a href="signup.html"><li>Signup</li></a>
+          </ul>
+          ul>
+        </div>
+
+        <div class="footer-items">
+          <h2>Tavel Diaries</h2>
+          <div class="border"></div>
+          <ul>
+            <a href=""><li>Travel</li></a>
+            <a href=""><li>History</li></a>
+            <a href=""><li>Photos</li></a>
+            <a href=""><li>Places</li></a>
+            <a href=""><li>Cafe</li></a>
+          </ul>
+        </div>
+
+        <div class="footer-items">
+          <h2>Contact us</h2>
+          <div class="border"></div>
+          <ul>
+            <li>
+              <i class="fa fa-map-marker" aria-hidden="true"></i>Vadodara,
+              Gujrat
+            </li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i>9633003300</li>
+            <li>
+              <i class="fa fa-envelope" aria-hidden="true"></i
+              >jinesh3300@gmail.com
+            </li>
+          </ul>
+
+          <div class="social-media">
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        Copyright &copy; Jinesh3300 / Travel Diaries 2020. All Rights Reserved
+      </div>
+    </div>
+  </body>
+</html>

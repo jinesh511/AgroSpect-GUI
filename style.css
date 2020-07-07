@@ -1,0 +1,779 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  z-index: 1000;
+}
+
+header .logo {
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  position: relative;
+  padding: 5px 10px;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header ul li a:hover {
+  background: #928d91;
+  border-radius: 3px;
+}
+
+.toggle {
+  display: none;
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 150px 100px 100px;
+}
+
+section h2 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+section p {
+  font-size: 18px;
+}
+
+section a {
+  display: inline-block;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 18px;
+  background: #111;
+  color: #fff;
+  margin-top: 50px;
+}
+
+section:nth-child(odd) {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  header ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    padding: 50px 100px;
+    text-align: center;
+    overflow: auto;
+    transition: 0.5s;
+    background: #000;
+    flex-direction: column;
+    transform: translateY(-100%);
+  }
+
+  header.active ul {
+    transform: translateY(0);
+  }
+
+  header ul li a {
+    margin: 5px 0;
+    font-size: 24px;
+  }
+
+  .toggle {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .toggle:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    z-index: 1;
+    box-shadow: 0 10px 0 #fff;
+    transition: 0.5s;
+  }
+
+  .toggle:after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    z-index: 1;
+    box-shadow: 0 10px 0 #fff;
+    transition: 0.5s;
+  }
+  header.active.toggle:before {
+    top: 14px;
+    transform: rotate(45deg);
+    box-shadow: 0#fff;
+  }
+
+  header.active.toggle:after {
+    top: 14px;
+    transform: rotate(-345deg);
+    box-shadow: 0#fff;
+  }
+}
+
+#home {
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 500pz;
+}
+
+.maindiv {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(images/t1.jpeg);
+  background-size: cover;
+  animation: slider 100s infinite linear;
+}
+
+@keyframes slider {
+  0% {
+    background-image: url(images/t1.jpeg);
+    opacity: 0.5;
+  }
+  10% {
+    background-image: url(images/t4.jpeg);
+    opacity: 0.5;
+  }
+  20% {
+    background-image: url(images/t8.jpeg);
+    opacity: 0.5;
+  }
+  30% {
+    background-image: url(images/t9.jpeg);
+    opacity: 0.5;
+  }
+  40% {
+    background-image: url(images/t10.jpeg);
+    opacity: 0.5;
+  }
+  50% {
+    background-image: url(images/t11.jpeg);
+    opacity: 0.5;
+  }
+  60% {
+    background-image: url(images/t12.jpeg);
+    opacity: 0.5;
+  }
+  70% {
+    background-image: url(images/t13.jpeg);
+    opacity: 0.5;
+  }
+  80% {
+    background-image: url(images/t14.jpeg);
+    opacity: 0.5;
+  }
+  90% {
+    background-image: url(images/t15.jpeg);
+    opacity: 0.5;
+  }
+  100% {
+    background-image: url(images/t16.jpeg);
+    opacity: 0.5;
+  }
+}
+.footer {
+  width: 100%;
+  background: #00121b;
+  display: block;
+}
+
+.inner-footer {
+  width: 95%;
+  margin: auto;
+  padding: 30px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.footer-items {
+  width: 25%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  padding: 10px 0;
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer-items p {
+  color: grey;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 25px;
+}
+
+h2 {
+  margin: 10px 0;
+  color: grey;
+  font-size: 16px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.border {
+  height: 2px;
+  width: 40px;
+  background: #ff9800;
+}
+
+ul {
+  list-style: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+ul a {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+ul a:hover {
+  color: #ff9800;
+}
+
+ul li {
+  margin: 10px 0;
+  height: 25px;
+}
+
+li i {
+  margin-right: 20px;
+}
+
+.social-media {
+  widows: 100px;
+  color: #fff;
+  text-align: center;
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.social-media i {
+  height: 15px;
+  width: 15px;
+  margin: 20px 5px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 50%;
+  border: 1px solid grey;
+  transition: 0.3s;
+}
+
+.social-media i:hover {
+  background: grey;
+}
+
+.footer-bottom {
+  padding: 10px;
+  background: #3d545f;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1085px) {
+  .footer-items {
+    width: 50%;
+  }
+}
+
+.hometext h2 {
+  position: absolute;
+  color: orangered;
+
+  font-size: 65px;
+  padding-left: 550px;
+  padding-top: 100px;
+}
+
+#img1 {
+  height: 300px;
+  width: 300px;
+  padding-top: 30px;
+}
+
+.login-box {
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.login-box h1 {
+  float: left;
+  font-size: 40px;
+  border-bottom: 6px solid orangered;
+  margin-bottom: 50px;
+  padding: 13px 0;
+}
+
+.textbox {
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid orangered;
+}
+
+#login_home {
+  background-color: #111;
+  opacity: 1;
+}
+
+.textbox i {
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+
+.textbox input {
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 14px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+
+.btn {
+  width: 100%;
+  background: none;
+  border: 2px solid orangered;
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#r {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 230px;
+  left: 70px;
+  color: orange;
+}
+
+#r1 {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 230px;
+  left: 370px;
+  color: orange;
+}
+
+#r2 {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 230px;
+  left: 670px;
+  color: orange;
+}
+
+#r3 {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 230px;
+  left: 970px;
+  color: orange;
+}
+
+.galary img:hover {
+  box-shadow: 1px 2px 10px 5px black;
+}
+
+.galary h2 {
+  color: black;
+  white-space: 5px;
+  position: absolute;
+  left: 400px;
+  letter-spacing: 3rem;
+  top: 70px;
+}
+
+.galary h2:hover {
+  color: maroon;
+  opacity: 0.8;
+  width: 530x;
+  padding-left: 40px;
+  border: 2px solid orangered;
+  align-items: center;
+  position: absolute;
+}
+
+.maindiv h2 {
+  color: white;
+  white-space: 2px;
+  position: absolute;
+  left: 300px;
+  letter-spacing: 0.6rem;
+  top: 400px;
+  opacity: 1;
+}
+
+.aboutt h2 {
+  color: white;
+  position: absolute;
+  letter-spacing: 1rem;
+  width: 700px;
+  height: 70px;
+  top: 70px;
+  left: 350px;
+}
+.aboutt h2:hover {
+  color: goldenrod;
+  opacity: 0.8;
+  width: 700px;
+  padding-left: 50px;
+  border: 1px solid goldenrod;
+  align-items: center;
+  left: 300px;
+}
+
+#tra {
+  width: 500px;
+  height: 70px;
+  top: 70px;
+  left: 400px;
+  position: absolute;
+}
+
+.aboutt p {
+  top: 530px;
+  left: 200px;
+  position: absolute;
+  letter-spacing: 0.3rem;
+}
+
+.aboutt h3 {
+  left: 120px;
+  top: 300px;
+  letter-spacing: 0.3rem;
+  position: absolute;
+  opacity: 0.3;
+}
+
+#child {
+  width: 270px;
+  height: 150px;
+  position: absolute;
+  top: 200px;
+  left: 750px;
+  color: orange;
+}
+
+.aboutt h5 {
+  width: 270px;
+  height: 150px;
+  position: absolute;
+  top: 380px;
+  left: 750px;
+  color: green;
+  letter-spacing: 0.1rem;
+}
+
+.aboutt img:hover {
+  box-shadow: 1px 2px 5px 5px white;
+}
+
+.aboutt h4 {
+  width: 270px;
+  height: 150px;
+  position: absolute;
+  top: 410px;
+  left: 750px;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+.aboutt h4:hover {
+  color: goldenrod;
+}
+
+#i1 {
+  width: 270px;
+  height: 150px;
+  position: absolute;
+  top: 200px;
+  left: 850px;
+  color: grey;
+  letter-spacing: 0.2rem;
+}
+
+#i2 {
+  width: 290px;
+  height: 150px;
+  position: absolute;
+  top: 250px;
+  left: 850px;
+  color: grey;
+  letter-spacing: 0.2rem;
+}
+
+#i3 {
+  width: 270px;
+  height: 150px;
+  position: absolute;
+  top: 300px;
+  left: 850px;
+  color: grey;
+  letter-spacing: 0.2rem;
+}
+
+#i4 {
+  width: 270px;
+  height: 150px;
+  position: absolute;
+  top: 350px;
+  left: 850px;
+  color: grey;
+  letter-spacing: 0.2rem;
+}
+
+#i5 {
+  width: 270px;
+  height: 150px;
+  position: absolute;
+  top: 400px;
+  left: 850px;
+  color: grey;
+  letter-spacing: 0.2rem;
+}
+
+#i6 {
+  width: 270px;
+  height: 150px;
+  position: absolute;
+  top: 450px;
+  left: 850px;
+  color: grey;
+  letter-spacing: 0.2rem;
+}
+
+#i7 {
+  width: 270px;
+  height: 150px;
+  position: absolute;
+  top: 500px;
+  left: 850px;
+  color: grey;
+  letter-spacing: 0.2rem;
+}
+
+#callus {
+  letter-spacing: 0.2rem;
+  height: 400px;
+}
+#callus1:hover {
+  border-bottom: 3px solid goldenrod;
+  width: justify;
+}
+
+#i1:hover {
+  color: goldenrod;
+  text-transform: uppercase;
+}
+
+#i2:hover {
+  color: goldenrod;
+  text-transform: uppercase;
+}
+
+#i3:hover {
+  color: goldenrod;
+  text-transform: uppercase;
+}
+
+#i4:hover {
+  color: goldenrod;
+  text-transform: uppercase;
+}
+
+#i5:hover {
+  color: goldenrod;
+  text-transform: uppercase;
+}
+
+#i6:hover {
+  color: goldenrod;
+  text-transform: uppercase;
+}
+
+#i7:hover {
+  color: goldenrod;
+  text-transform: uppercase;
+}
+
+#btn3 {
+  background: none;
+  border: 2px solid goldenrod;
+  color: gray;
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  top: 760px;
+  left: 400px;
+  height: 30px;
+  width: 55%;
+  letter-spacing: 0.5rem;
+}
+
+#profile h2 {
+  color: goldenrod;
+  position: absolute;
+  letter-spacing: 1rem;
+  width: 285px;
+  height: 70px;
+  top: 50px;
+  left: 500px;
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+#s1 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 250px;
+  left: 35px;
+}
+
+#s2 {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 255px;
+  left: 250px;
+}
+
+#s3 {
+  width: 160x;
+  height: 160px;
+  position: absolute;
+  top: 248px;
+  left: 450px;
+}
+
+#s4 {
+  width: 160x;
+  height: 160px;
+  position: absolute;
+  top: 248px;
+  left: 660px;
+}
+
+#s5 {
+  width: 160x;
+  height: 160px;
+  position: absolute;
+  top: 248px;
+  left: 880px;
+}
+
+#s6 {
+  width: 160x;
+  height: 160px;
+  position: absolute;
+  top: 248px;
+  left: 1080px;
+}
+
+.profilee img:hover {
+  box-shadow: 2px 2px 10px 5px goldenrod;
+}
+
+.profilee h2:hover {
+  box-shadow: 1px 2px 10px 5px goldenrod;
+  width: justify;
+}
+
+#logof {
+  width: 150px;
+  height: 150px;
+  top: 450px;
+  left: 35px;
+}
+
+#logo {
+  left: 1px;
+  height: 65px;
+  width: 65px;
+  padding-left: 2px;
+  top: 2px;
+}

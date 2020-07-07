@@ -1,0 +1,49 @@
+[0216/210436.116:ERROR:process_info.cc(359)] UncheckedAllocate
+[0314/192722.345:ERROR:process_info.cc(359)] UncheckedAllocate
+[0314/192722.767:ERROR:process_reader_win.cc(182)] ResumeThread: The parameter is incorrect. (0x57)
+[0314/192722.768:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0314/192722.768:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0314/192722.768:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0314/192722.768:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0314/192722.768:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0314/192722.768:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0314/192722.768:ERROR:process_reader_win.cc(182)] ResumeThread: The parameter is incorrect. (0x57)
+[0314/192722.768:ERROR:process_reader_win.cc(182)] ResumeThread: The parameter is incorrect. (0x57)
+[0314/192722.768:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0314/192722.768:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0314/192722.768:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0314/192722.768:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0314/192722.768:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0314/192722.768:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0314/192722.768:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0314/192722.768:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0314/192722.768:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0314/192722.769:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0314/192722.769:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0314/192722.769:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0314/192722.769:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0314/192727.086:ERROR:process_info.cc(359)] UncheckedAllocate
+[0314/214515.592:ERROR:process_info.cc(359)] UncheckedAllocate
+[0314/220924.277:ERROR:process_info.cc(359)] UncheckedAllocate
+[0315/202355.741:ERROR:process_info.cc(359)] UncheckedAllocate
+[0315/202420.782:ERROR:process_info.cc(359)] UncheckedAllocate
+[0315/202846.723:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0315/210406.280:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0315/210406.281:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0315/210906.278:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0315/211816.979:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0315/212406.279:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0315/213906.286:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0315/215406.289:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0315/235244.026:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0316/000744.036:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0316/002244.045:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0316/002721.989:ERROR:process_info.cc(359)] UncheckedAllocate
+[0316/002722.027:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0316/003411.619:ERROR:settings.cc(320)] Settings magic is not 1129342067
+[0316/123629.765:ERROR:process_info.cc(359)] UncheckedAllocate
+[0316/123652.922:ERROR:process_info.cc(359)] UncheckedAllocate
+[0316/124032.766:ERROR:process_info.cc(359)] UncheckedAllocate
+[0316/124035.839:ERROR:process_info.cc(359)] UncheckedAllocate
+[0319/102903.388:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0319/103111.527:ERROR:crash_report_database_win.cc(428)] unexpected header
