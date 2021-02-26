@@ -5,7 +5,7 @@
 
 ## General info
 
-This project is Front-End Web application for The Blogging Application.
+This project is Front-End Web part of Plant Disease Detection.
 
 ## Technologies
 
